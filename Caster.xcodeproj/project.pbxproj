@@ -12,6 +12,8 @@
 		A1F8D3B32C886B690091FB91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F8D3B22C886B690091FB91 /* Assets.xcassets */; };
 		A1F8D3B62C886B690091FB91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F8D3B52C886B690091FB91 /* Preview Assets.xcassets */; };
 		A1F8D3C02C886BFB0091FB91 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8D3BF2C886BFB0091FB91 /* Album.swift */; };
+		A1F8D3C32C9987320091FB91 /* CryptoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8D3C22C9987320091FB91 /* CryptoAPI.swift */; };
+		A1F8D3C52C998F2A0091FB91 /* ItunesPodcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8D3C42C998F2A0091FB91 /* ItunesPodcast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		A1F8D3B22C886B690091FB91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1F8D3B52C886B690091FB91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1F8D3BF2C886BFB0091FB91 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		A1F8D3C22C9987320091FB91 /* CryptoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAPI.swift; sourceTree = "<group>"; };
+		A1F8D3C42C998F2A0091FB91 /* ItunesPodcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesPodcast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 				A1F8D3BC2C886B7A0091FB91 /* Views */,
 				A1F8D3B22C886B690091FB91 /* Assets.xcassets */,
 				A1F8D3B42C886B690091FB91 /* Preview Content */,
+				A1F8D3C12C9986F30091FB91 /* Examples */,
 			);
 			path = Caster;
 			sourceTree = "<group>";
@@ -90,8 +95,17 @@
 			isa = PBXGroup;
 			children = (
 				A1F8D3BF2C886BFB0091FB91 /* Album.swift */,
+				A1F8D3C42C998F2A0091FB91 /* ItunesPodcast.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A1F8D3C12C9986F30091FB91 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				A1F8D3C22C9987320091FB91 /* CryptoAPI.swift */,
+			);
+			path = Examples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,7 +178,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F8D3C52C998F2A0091FB91 /* ItunesPodcast.swift in Sources */,
 				A1F8D3B12C886B670091FB91 /* ContentView.swift in Sources */,
+				A1F8D3C32C9987320091FB91 /* CryptoAPI.swift in Sources */,
 				A1F8D3AF2C886B670091FB91 /* CasterApp.swift in Sources */,
 				A1F8D3C02C886BFB0091FB91 /* Album.swift in Sources */,
 			);
