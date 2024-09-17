@@ -11,24 +11,21 @@ struct ContentView: View {
     @StateObject private var viewModel = PodcastViewModel()
     
     var body: some View {
-        NavigationView {
-            List(viewModel.podcasts) { podcast in
-                HStack(spacing: 16) {
-                    PodcastImageView(podcast: podcast)
-                    VStack(alignment: .leading) {
-                        Text(podcast.collectionName)
-                            .font(.headline)
-                            .lineLimit(2)
-                            .truncationMode(.tail)
-                        Text(podcast.primaryGenreName)
-                            .font(.subheadline)
-                            .foregroundColor(.secondary)
-                    }
+        List(viewModel.podcasts) { podcast in
+            HStack(spacing: 16) {
+                PodcastImageView(podcast: podcast)
+                VStack(alignment: .leading, spacing: 6) {
+                    Text(podcast.collectionName)
+                        .font(.headline)
+                        .lineLimit(2)
+                        .truncationMode(.tail)
+                    Text(podcast.primaryGenreName)
+                        .font(.caption)
+                        .foregroundColor(.secondary)
                 }
             }
-            .listStyle(PlainListStyle())
-            .navigationTitle("Podcasts")
         }
+        .listStyle(PlainListStyle())
         .onAppear {
             viewModel.loadData()
         }
@@ -57,8 +54,12 @@ struct PodcastImageView: View {
                 Color.gray
             }
         }
-        .frame(width: 72, height: 72)
-        .cornerRadius(8)
+        .frame(width: 64, height: 64)
+        .cornerRadius(4)
+        .overlay(
+            RoundedRectangle(cornerRadius: 4)
+                .stroke(Color.gray.opacity(0.5), lineWidth: 1)
+        )
     }
     
     private func getBestImageURL() -> URL? {
