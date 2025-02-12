@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A12596802CBFFA9300FBE693 /* RSSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A125967F2CBFFA9300FBE693 /* RSSParser.swift */; };
+		A12596832CC0518F00FBE693 /* XMLCoder in Frameworks */ = {isa = PBXBuildFile; productRef = A12596822CC0518F00FBE693 /* XMLCoder */; };
 		A1F8D3AF2C886B670091FB91 /* CasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8D3AE2C886B670091FB91 /* CasterApp.swift */; };
 		A1F8D3B12C886B670091FB91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8D3B02C886B670091FB91 /* ContentView.swift */; };
 		A1F8D3B32C886B690091FB91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F8D3B22C886B690091FB91 /* Assets.xcassets */; };
@@ -14,9 +16,11 @@
 		A1F8D3C02C886BFB0091FB91 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8D3BF2C886BFB0091FB91 /* Album.swift */; };
 		A1F8D3C32C9987320091FB91 /* CryptoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8D3C22C9987320091FB91 /* CryptoAPI.swift */; };
 		A1F8D3C52C998F2A0091FB91 /* ItunesPodcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8D3C42C998F2A0091FB91 /* ItunesPodcast.swift */; };
+		A1F8D3C82C9ADA6F0091FB91 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8D3C72C9ADA6F0091FB91 /* UIApplication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A125967F2CBFFA9300FBE693 /* RSSParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSParser.swift; sourceTree = "<group>"; };
 		A1F8D3AB2C886B670091FB91 /* Caster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F8D3AE2C886B670091FB91 /* CasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasterApp.swift; sourceTree = "<group>"; };
 		A1F8D3B02C886B670091FB91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -25,6 +29,7 @@
 		A1F8D3BF2C886BFB0091FB91 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		A1F8D3C22C9987320091FB91 /* CryptoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAPI.swift; sourceTree = "<group>"; };
 		A1F8D3C42C998F2A0091FB91 /* ItunesPodcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesPodcast.swift; sourceTree = "<group>"; };
+		A1F8D3C72C9ADA6F0091FB91 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A12596832CC0518F00FBE693 /* XMLCoder in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +63,7 @@
 		A1F8D3AD2C886B670091FB91 /* Caster */ = {
 			isa = PBXGroup;
 			children = (
+				A1F8D3C62C9ADA580091FB91 /* Extensions */,
 				A1F8D3AE2C886B670091FB91 /* CasterApp.swift */,
 				A1F8D3B02C886B670091FB91 /* ContentView.swift */,
 				A1F8D3BE2C886B8D0091FB91 /* Models */,
@@ -65,6 +72,7 @@
 				A1F8D3B22C886B690091FB91 /* Assets.xcassets */,
 				A1F8D3B42C886B690091FB91 /* Preview Content */,
 				A1F8D3C12C9986F30091FB91 /* Examples */,
+				A125967F2CBFFA9300FBE693 /* RSSParser.swift */,
 			);
 			path = Caster;
 			sourceTree = "<group>";
@@ -108,6 +116,14 @@
 			path = Examples;
 			sourceTree = "<group>";
 		};
+		A1F8D3C62C9ADA580091FB91 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A1F8D3C72C9ADA6F0091FB91 /* UIApplication.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -124,6 +140,9 @@
 			dependencies = (
 			);
 			name = Caster;
+			packageProductDependencies = (
+				A12596822CC0518F00FBE693 /* XMLCoder */,
+			);
 			productName = Caster;
 			productReference = A1F8D3AB2C886B670091FB91 /* Caster.app */;
 			productType = "com.apple.product-type.application";
@@ -152,6 +171,9 @@
 				Base,
 			);
 			mainGroup = A1F8D3A22C886B670091FB91;
+			packageReferences = (
+				A12596812CC0518F00FBE693 /* XCRemoteSwiftPackageReference "XMLCoder" */,
+			);
 			productRefGroup = A1F8D3AC2C886B670091FB91 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -178,10 +200,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F8D3C82C9ADA6F0091FB91 /* UIApplication.swift in Sources */,
 				A1F8D3C52C998F2A0091FB91 /* ItunesPodcast.swift in Sources */,
 				A1F8D3B12C886B670091FB91 /* ContentView.swift in Sources */,
 				A1F8D3C32C9987320091FB91 /* CryptoAPI.swift in Sources */,
 				A1F8D3AF2C886B670091FB91 /* CasterApp.swift in Sources */,
+				A12596802CBFFA9300FBE693 /* RSSParser.swift in Sources */,
 				A1F8D3C02C886BFB0091FB91 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,6 +410,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A12596812CC0518F00FBE693 /* XCRemoteSwiftPackageReference "XMLCoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CoreOffice/XMLCoder";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.17.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A12596822CC0518F00FBE693 /* XMLCoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A12596812CC0518F00FBE693 /* XCRemoteSwiftPackageReference "XMLCoder" */;
+			productName = XMLCoder;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A1F8D3A32C886B670091FB91 /* Project object */;
 }
